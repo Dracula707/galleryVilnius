@@ -12,11 +12,6 @@ is simple just git clone project and put it in to apache, xampp  hosting folder.
 ## Images
 ![image-0](https://raw.githubusercontent.com/Dracula707/galleryVilnius/main/uploads/image0.webp)
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
 ## Credits
 https://unsplash.com<br />
 https://absurd.design<br />
