@@ -3,7 +3,7 @@
 Gallery Vilnius is website for imaginary art club. I found inspiration while learning from frontendmentor.io one of there challenges where "Galleria slideshow site" that i liked and wanted to expand on concept.
 
 ## Example
-[Demo](https://gallery-v.herokuapp.com)
+<a href="https://gallery-v.herokuapp.com" target="_blank">Demo</a>
 
 ## Installation
 
@@ -18,9 +18,9 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## Credits
-https://unsplash.com\
-https://absurd.design\
-https://icons.getbootstrap.com\
+https://unsplash.com<br />
+https://absurd.design<br />
+https://icons.getbootstrap.com<br />
 http://ganlanyuan.github.io/tiny-slider
 
 ## License
