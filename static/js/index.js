@@ -1,3 +1,4 @@
+// we instance slider with some setthings
 const slider = tns({
   container: '.my-slider',
   navContainer: '.dots',
@@ -12,14 +13,10 @@ const slider = tns({
   autoplayButtonOutput: false
 });
 
-let dots = [document.body.querySelector('#dot-a'),document.body.querySelector('#dot-b'),document.body.querySelector('#dot-c')];
+// we query all the dots for slider 
+const dots = [document.body.querySelector('#dot-a'),document.body.querySelector('#dot-b'),document.body.querySelector('#dot-c')];
 
-const news = (number) => {
-  const modal = document.getElementById(`modal${number}`);
-  modal.classList.toggle('hidden');
-  document.body.classList.toggle('modal-on');
-}
-
+// function that switch dots between empty and filled if image on specify index
 const update = (index) => {
   for(let i = 0; i < dots.length; i++) {
     const inst = dots[i].querySelectorAll('svg');
@@ -46,6 +43,7 @@ const update = (index) => {
   }
 }
 
+// when slider automatically switch we update dots
 const index = (info) => {
   // console.log(info.index);
   update((info.index - 1));
@@ -53,6 +51,33 @@ const index = (info) => {
 
 slider.events.on('indexChanged', index);
 
+// animation for More information icons
+const items = document.querySelectorAll('.grid-more-info svg');
+items.forEach(item => {
+  item.addEventListener('animationend', function( event ) {
+    event.target.classList.remove('animate-bounce');
+  });
+
+  item.addEventListener("mouseover", function( event ) {
+    if (!event.target.classList.contains('animate-bounce')) {
+      event.target.classList.add('animate-bounce');
+    }
+  });
+
+});
 
 
-update(0);
+// auto typing top text
+let i = 0;
+const txt = 'Discover, learn, and see extraordinary art.';
+const speed = 50;
+document.getElementById("header").innerHTML = "";
+
+const typeWriter = () => {
+  if (i < txt.length) {
+    header.innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+typeWriter();

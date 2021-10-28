@@ -12,9 +12,9 @@
           </svg>
         </div>
       </header>
-      <main class="p-4 text-center">
-        <p class="font-semibold text-void-fgp text-sm">From july 24 to 26 we gonna be closed sorry for inconveniens for some small repairs to building to improve quality and design. So you enjoy visiting us and feel well.</p>
-      </main>
+      <section class="p-4 text-center">
+        <h3 class="font-semibold text-void-fgp text-sm">From july 24 to 26 we gonna be closed sorry for inconveniens for some small repairs to building to improve quality and design. So you enjoy visiting us and feel well.</h3>
+      </section>
       <footer class="flex justify-center p-2">
         <div class="text-right pb-4">
             <button onclick="closeModal('modal1')" class="btn btn-primary">

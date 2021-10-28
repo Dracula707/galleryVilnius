@@ -12,11 +12,11 @@
           </svg>
         </div>
       </header>
-      <main class="p-4 text-left">
-        <p class="font-semibold text-void-fgp text-sm">We got new art come ant visit us! or check out in collection online.</p>
+      <section class="p-4 text-left">
+        <h3 class="font-semibold text-void-fgp text-sm">We got new art come ant visit us! or check out in collection online.</h3>
         <p class="mt-2">Guernica by Pablo Picasso <a class="link" href="artpage.php?id=3">Here</a></p>
         <p class="mt-2">The Night Café by Vincent Van Gogh <a class="link" href="artpage.php?id=10">Here</a></p>
-      </main>
+      </section>
       <footer class="flex justify-center p-2">
         <div class="text-right pb-4">
             <button onclick="closeModal('modal0')" class="btn btn-primary">

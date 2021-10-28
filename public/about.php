@@ -14,6 +14,9 @@ if(isset($_POST['submit'])) {
       exit();
     }
   }
+
+  header('Location: ./about.php?form=error');
+  exit();
 }
 ?>
 
@@ -49,7 +52,7 @@ echo head('About','');
             </div>
           </div>
           <div class="mobile-order">
-            <img src="../static/assets/other/about.webp" width="100%" alt="about image">
+            <img class="animate-apear" src="../static/assets/other/about.webp" width="100%" height="auto" alt="about image">
           </div>
         </div>
 
@@ -80,14 +83,20 @@ echo head('About','');
               </svg>
               <a href="mailto:info@vilniusgallery.com" class="mx-2 mt-1">info@vilniusgallery.com</a>
             </div>
+            <div class="flex my-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+              <a href="https://github.com/Dracula707/galleryVilnius" target="_blank" class="mx-2 mt-1">github.com/Dracula707</a>
+            </div>
           </div>
           <div>
             <form action="#" method="POST" class="flex flex-column">
-              <input class="input" type="text" name="name" placeholder="Full Name">
-              <input class="input" type="email" name="email" placeholder="Email">
+              <input class="input" type="text" name="name" placeholder="Full Name" required>
+              <input class="input" type="email" name="email" placeholder="Email" required>
               <div class="flex">
                 <input class="input-disabled" style="width:90px;" type="tel1" name="tel1" value="+370" disabled>
-                <input class="input w-full" pattern="[0-9]{8}" type="tel" name="tel" placeholder="Telephone Number">
+                <input class="input w-full" minlength="8" maxlength="8" pattern="[6]{1}[0-9]{7}" type="tel" name="tel" placeholder="Telephone Number" required>
               </div>
               <input class="btn btn-primary mt-2" style="width: 50%;" type="submit" name="submit" value="Submit">
             </form>

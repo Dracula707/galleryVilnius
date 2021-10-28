@@ -133,9 +133,28 @@
   margin-left:10px;
 }
 
+.image-new {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 30px 0 0;
+  border-color: #007bff transparent transparent transparent;
+
+  top: 0;
+  left: 0;
+  position:absolute;
+}
+
 .dots-nav {
   bottom: 1%;
   left: 50%;
   transform: translateX(-50%);
 }
 
+.dots > div:hover svg {
+  fill: var(--color--ascent);
+}
+
+.hero-img {
+  width: 100%;
+}

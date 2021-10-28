@@ -16,7 +16,7 @@ function connect() {
 
 function getArts($db) {
 
-    $stmt = $db->prepare("SELECT c.id, c.galleryimg, c.title, c.class, k.name FROM collection c LEFT JOIN creator k ON c.creatorId = k.id;"); 
+    $stmt = $db->prepare("SELECT c.id, c.galleryimg, c.addedyear, c.title, c.class, k.name FROM collection c LEFT JOIN creator k ON c.creatorId = k.id;"); 
     $stmt->execute(); 
     $rows = $stmt->fetchall();
 
@@ -25,7 +25,7 @@ function getArts($db) {
 
 function getArt($db, $id) {
 
-    $stmt = $db->prepare("SELECT c.title, c.description, c.galleryimg, c.heroImg, k.name, k.image FROM collection c LEFT JOIN creator k ON c.creatorId = k.id WHERE c.id = ? ;"); 
+    $stmt = $db->prepare("SELECT c.title, c.description, c.galleryimg, k.name, k.image FROM collection c LEFT JOIN creator k ON c.creatorId = k.id WHERE c.id = ? ;"); 
     $stmt->execute([$id]); 
     $row = $stmt->fetch();
 
@@ -33,11 +33,27 @@ function getArt($db, $id) {
 }
 
 function addContact($db, $values) {
-    $stmt = $db->prepare("INSERT INTO contact(name,email,phonenumber) values (?,?,?)"); 
+    $stmt = $db->prepare("INSERT INTO contact(name,email,phonenumber,completed) values (?,?,?,'0')"); 
     $stmt->execute($values); 
     $id = $db->lastInsertId();
     
     return $id;
+}
+
+function setContact($db, $id) {
+  $stmt = $db->prepare("UPDATE contact SET completed = 1 WHERE id = ?;"); 
+  $stmt->execute([$id]); 
+  $id = $db->lastInsertId();
+
+  return $id;
+}
+
+function getContacts($db) {
+  $stmt = $db->prepare("SELECT * FROM contact ORDER BY completed ASC;"); 
+  $stmt->execute(); 
+  $row = $stmt->fetchall();
+
+  return $row;
 }
 
 function getLogin($db, $username) {
@@ -48,24 +64,18 @@ function getLogin($db, $username) {
     return $row;
 }
 
-function getContacts($db) {
-  $stmt = $db->prepare("SELECT * FROM contact;"); 
+function getCollection($db) {
+  $stmt = $db->prepare("SELECT id,title,class FROM collection;"); 
   $stmt->execute(); 
   $row = $stmt->fetchall();
 
   return $row;
 }
 
-function getArtsList($db) {
-  $row = [];
-
-  $stmt = $db->prepare("SELECT id,title, class FROM collection;"); 
-  $stmt->execute(); 
-  $row[] = $stmt->fetchall();
-
+function getArtist($db) {
   $stmt = $db->prepare("SELECT id,name FROM creator;"); 
   $stmt->execute(); 
-  $row[] = $stmt->fetchall();
+  $row = $stmt->fetchall();
 
   return $row;
 }

@@ -10,6 +10,12 @@ const closeModal = (name) => {
     document.body.classList.toggle('modal-on');
 }
 
+const openModal = (name) => {
+    const ref = document.getElementById(name);
+    ref.classList.remove('hidden');
+    document.body.classList.toggle('modal-on');
+}
+
 const theme = () => {
     document.body.classList.toggle('theme-dark');
     localStorage.setItem('theme', document.body.classList.value);

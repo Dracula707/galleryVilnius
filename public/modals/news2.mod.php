@@ -12,10 +12,10 @@
           </svg>
         </div>
       </header>
-      <main class="p-4 text-center">
-        <p class="font-semibold text-void-fgp text-sm">Thank you for visiting my website!</p>
-        <p>Visit my Github <a class="link" href="https://github.com/dracula707" target="_blank">link</a></p>
-    </main>
+      <section class="p-4 text-center">
+        <h3 class="font-semibold text-void-fgp text-sm">Thank you for visiting my website!</h3>
+        <p>Visit my Github <a class="link" href="https://github.com/Dracula707/galleryVilnius" target="_blank">link</a></p>
+      </section>
       <footer class="flex justify-center p-2">
         <div class="text-right pb-4">
             <button onclick="closeModal('modal2')" class="btn btn-primary">

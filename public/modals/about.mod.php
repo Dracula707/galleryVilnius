@@ -13,7 +13,7 @@
         </div>
       </header>
       <main class="p-4 text-center">
-      <p class="font-semibold text-void-fgp text-sm">We got your contact information we gonna contact you as soon as possible, thank you!</p>
+      <p id="modal-text" class="font-semibold text-void-fgp text-sm">We got your contact information we gonna contact you as soon as possible, thank you!</p>
       </main>
       <footer class="flex justify-center p-2">
         <div class="text-right pb-4">

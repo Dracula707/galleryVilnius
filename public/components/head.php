@@ -11,6 +11,7 @@ $html = "<!DOCTYPE html>
     <link rel=\"shortcut icon\" href=\"../static/assets/other/favicon.ico\">
     $css
     <link rel=\"stylesheet\" href=\"../static/css/normalize.css\" >
+    <link rel=\"stylesheet\" href=\"../static/css/animation.css\" >
     <link rel=\"stylesheet\" href=\"../static/css/components.css\" >
     <link rel=\"stylesheet\" href=\"../static/css/main.css\" >
     <link rel=\"stylesheet\" href=\"../static/css/styles.css\" >
