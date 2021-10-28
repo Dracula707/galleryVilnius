@@ -3,7 +3,7 @@
 Gallery Vilnius is website for imaginary art club. I found inspiration while learning from frontendmentor.io one of there challenges where "Galleria slideshow site" that i liked and wanted to expand on concept.
 
 ## Example
-<a href="https://gallery-v.herokuapp.com" target="_blank">Demo</a>
+[Demo](https://gallery-v.herokuapp.com){:target="_blank"}
 
 ## Installation
 
