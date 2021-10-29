@@ -1,4 +1,8 @@
 <?php 
+    include 'modals/news.mod.php';
+?>
+
+<?php 
 include 'components/head.php';
 echo head('Homepage','<link rel="stylesheet" href="../static/lib/tiny-slider/tiny-slider.css">');
 ?>
@@ -22,7 +26,7 @@ echo head('Homepage','<link rel="stylesheet" href="../static/lib/tiny-slider/tin
       </div>
 
       <div class="mt-60 grid-index">
-        <img class="hero-img" src="../static/assets/art/girl-with-pearl-earring/gallery.jpg" alt="girl with pearl earring art" >
+        <img class="hero-img" src="../static/assets/art/girl-with-pearl-earring/gallery.jpg" alt="girl with pearl earring art" width="500" height="900" >
         <div class="mx-4 h-full flex align-center">
           <div class="w-full">
             <h2 class="title text-left my-3">Girl with a Pearl Earring</h2>
@@ -108,9 +112,9 @@ echo head('Homepage','<link rel="stylesheet" href="../static/lib/tiny-slider/tin
         <!-- https://unsplash.com/photos/1xp5VxvyKL0 -->
         <!-- https://unsplash.com/photos/oLhTLD-RBsc -->
         <div class="my-slider">
-           <img src="../static/assets/bgrnd/bgrnd1.webp" width="100%" height="auto" alt="gallery live picture" />
-          <img src="../static/assets/bgrnd/bgrnd0.webp" width="100%" height="auto" alt="gallery live picture" />
-          <img src="../static/assets/bgrnd/bgrnd2.webp" width="100%" height="auto" alt="gallery live picture" />
+           <img src="../static/assets/bgrnd/bgrnd1.webp" class="img-w-full" alt="gallery live picture" />
+          <img src="../static/assets/bgrnd/bgrnd0.webp"  class="img-w-full" alt="gallery live picture" />
+          <img src="../static/assets/bgrnd/bgrnd2.webp"  class="img-w-full" alt="gallery live picture" />
         </div>
         <div class="dots-nav absolute">
           <div class="dots flex">
@@ -177,9 +181,10 @@ echo head('Homepage','<link rel="stylesheet" href="../static/lib/tiny-slider/tin
     <?php include 'components/footer.php'; ?>
   </div>
   <?php  
-    include 'modals/news0.mod.php';
-    include 'modals/news1.mod.php';
-    include 'modals/news2.mod.php';
+    news(0);
+    news(1);
+    news(2);
+    news(3);
   ?>
 
   <script src="../static/lib/tiny-slider/tiny-slider.js"></script>

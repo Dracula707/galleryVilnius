@@ -47,12 +47,12 @@ echo head('About','');
                 <li><p>Saturday, Sunday and public holiday: 10:00am – 7:00pm</p></li>
                 <li><p>Christmas Eve and Lunar New Year's Eve: 10:00am – 5:00pm</p></li>
                 <li><p>Closed on Thursdays (except public holiday)</p></li>
-                <li><a href="https://www.google.com/search?tbs=lf:1,lf_ui:1&tbm=lcl&q=museum&rflfq=1&num=10&ved=2ahUKEwi9yryFrtvzAhV-hP0HHStMDm4QtgN6BAghEAc#rlfi=hd:;si:4727335685913863594,l,CgZtdXNldW1ImdyirdSVgIAIWhIQABgAIgZtdXNldW0qBAgDEACSAQZtdXNldW2qAQ4QASoKIgZtdXNldW0oAA,y,MbZryw5lZlU;mv:[[54.71269780650769,25.33762154394531],[54.681051899374246,25.236341331542967],null,[54.69687793836469,25.28698143774414],14]" target="_blank">At Vilnius Gallery. Street,State,Postal Code</a></li>
+                <li><a href="https://www.google.com/maps/place/Lithuanian+Academy+of+Music+and+Theatre/@54.6880134,25.2685718,636m/data=!3m1!1e3!4m13!1m7!3m6!1s0x46dd940ede9a658b:0x75a83f17ead420ab!2sAuk%C5%B3+g.+2A,+Vilnius+01400!3b1!8m2!3d54.6880134!4d25.2707605!3m4!1s0x46dd940ed66cd23d:0x68d0773bac39aeee!8m2!3d54.688643!4d25.2696153" target="_blank">At Vilnius Gallery. Street,State,Postal Code</a></li>
               </ul>
             </div>
           </div>
           <div class="mobile-order">
-            <img class="animate-apear" src="../static/assets/other/about.webp" width="100%" height="auto" alt="about image">
+            <img class="animate-apear img-w-full" src="../static/assets/other/about.webp" width="300" height="500" alt="about image">
           </div>
         </div>
 
@@ -69,7 +69,7 @@ echo head('About','');
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
               </svg>
-              <a href="https://www.google.com/search?tbs=lf:1,lf_ui:1&tbm=lcl&q=museum&rflfq=1&num=10&ved=2ahUKEwi9yryFrtvzAhV-hP0HHStMDm4QtgN6BAghEAc#rlfi=hd:;si:4727335685913863594,l,CgZtdXNldW1ImdyirdSVgIAIWhIQABgAIgZtdXNldW0qBAgDEACSAQZtdXNldW2qAQ4QASoKIgZtdXNldW0oAA,y,MbZryw5lZlU;mv:[[54.71269780650769,25.33762154394531],[54.681051899374246,25.236341331542967],null,[54.69687793836469,25.28698143774414],14]" target="_blank" class="mx-2">Vilnius Gallery. Street,State,Postal Code</a>
+              <a href="https://www.google.com/maps/place/Lithuanian+Academy+of+Music+and+Theatre/@54.6880134,25.2685718,636m/data=!3m1!1e3!4m13!1m7!3m6!1s0x46dd940ede9a658b:0x75a83f17ead420ab!2sAuk%C5%B3+g.+2A,+Vilnius+01400!3b1!8m2!3d54.6880134!4d25.2707605!3m4!1s0x46dd940ed66cd23d:0x68d0773bac39aeee!8m2!3d54.688643!4d25.2696153" target="_blank" class="mx-2">Vilnius Gallery. Street,State,Postal Code</a>
             </div>
             <div class="flex my-2">
               <svg width="32" height="32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
@@ -95,7 +95,7 @@ echo head('About','');
               <input class="input" type="text" name="name" placeholder="Full Name" required>
               <input class="input" type="email" name="email" placeholder="Email" required>
               <div class="flex">
-                <input class="input-disabled" style="width:90px;" type="tel1" name="tel1" value="+370" disabled>
+                <input class="input-disabled" style="width:90px;" type="tel" name="tel1" value="+370" disabled>
                 <input class="input w-full" minlength="8" maxlength="8" pattern="[6]{1}[0-9]{7}" type="tel" name="tel" placeholder="Telephone Number" required>
               </div>
               <input class="btn btn-primary mt-2" style="width: 50%;" type="submit" name="submit" value="Submit">

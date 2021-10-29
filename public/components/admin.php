@@ -1,5 +1,6 @@
 <?php 
-function loginHtml() {
+function loginHtml($error) {
+    $text = $error === 1 ? "<p class=\"text-xs mt-2\" style=\"color: var(--color--st-error);\">Incorrect username or password.</p>" : "";
     $html = "
         <div class=\"mt-60 mb-4\">
         <h1 class=\"header\">Admin.</h1>
@@ -19,8 +20,9 @@ function loginHtml() {
                 </div>
     
                 <div class=\"mt-2\">
-                <input class=\"btn btn-primary\" type=\"submit\" name=\"submit\" value=\"login\">
+                  <input class=\"btn btn-primary\" type=\"submit\" name=\"submit\" value=\"login\">
                 </div>
+                $text
             </form>
         </section>
     </div>    

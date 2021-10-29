@@ -354,3 +354,9 @@
 .pb-4 {
   padding-bottom: 20px;
 }
+
+.img-w-full {
+  width: 100%;
+  height: auto;
+}
+

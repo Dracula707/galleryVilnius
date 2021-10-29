@@ -36,7 +36,7 @@ echo head('Art','');
 
         <div class="grid-three mt-60" >
           <div>
-            <img src="../static/<?= $art['galleryimg']; ?>/hero-large.jpg" width="100%" height="auto" alt="art piece">
+            <img class="img-w-full" src="../static/<?= $art['galleryimg']; ?>/hero-large.jpg" alt="art piece">
           </div>
           <div class="relative">
             <div class="art-header">
@@ -44,7 +44,7 @@ echo head('Art','');
               <p class="text-small"><?= $art['name']; ?></p>
             </div>
             <div class="art-creator">
-              <img src="../static<?= $art['image']; ?>artist.jpg" width="128" height="128" >
+              <img src="../static<?= $art['image']; ?>artist.jpg" alt="artist" width="128" height="128" >
             </div>
           </div>
           <div class="flex align-center">

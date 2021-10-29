@@ -33,7 +33,7 @@ echo head('Collection','');
           </p>
 
           <p class="mt-2">
-            If you like what you see, come at visit us to see them in person they look even more magnificent.
+            If you like what you see, visit us to see them in person they look even more magnificent.
           </p>
         </div>
 

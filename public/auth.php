@@ -34,15 +34,15 @@
       $password = trim($_POST['password']);
 
       if (empty($username) || empty($password)) {
-        header("location: auth.php?=Login=empty");
+        header("location: auth.php?Login=empty");
         exit();
       }
 
       $l = login($username,$password);
       if ($l === -1) {
-        header("location: auth.php?=Login=empty");
+        header("location: auth.php?Login=empty");
       } else {
-        header("location: auth.php?=Login=sucess");
+        header("location: auth.php?Login=sucess");
       }
     }
   }
@@ -58,7 +58,7 @@ if ($state != '0') {
 switch ($state) {
   case '0':
     if(isset($_GET['Login'])) {
-      $error = ($_GET['Login'] === 'empty') ? -1 : 0;
+      $error = ($_GET['Login'] === 'empty') ? 1 : 0;
     }
     break;
   
@@ -95,7 +95,7 @@ echo head('Admin','');
       <?php 
       switch ($state) {
         case '0':
-          echo loginHtml();
+          echo loginHtml($error);
           break;
         case '1':
           headerHtml();
