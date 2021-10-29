@@ -16,9 +16,9 @@ to access admin you need to go to auth.php file and login with user, password "A
 currenly doesn't have alot of features.
 
 ## Credits
-https://unsplash.com\
-https://absurd.design\
-https://icons.getbootstrap.com\
+https://unsplash.com<br />
+https://absurd.designm<br />
+https://icons.getbootstrap.comm<br />
 http://ganlanyuan.github.io/tiny-slider
 
 ## License
