@@ -12,7 +12,7 @@ is simple just git clone project and put it in to apache, xampp  hosting folder.
 ![image-0](https://raw.githubusercontent.com/Dracula707/galleryVilnius/main/uploads/image0.webp)
 
 ## Admin
-to access admin you need to go to auth.php file and login with user, password "Admin"
+to access admin you need to go to auth.php file and login with user, password "admin"
 currenly doesn't have alot of features.
 
 ## Credits
