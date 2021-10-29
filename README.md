@@ -17,8 +17,8 @@ currenly doesn't have alot of features.
 
 ## Credits
 https://unsplash.com<br />
-https://absurd.designm<br />
-https://icons.getbootstrap.comm<br />
+https://absurd.design<br />
+https://icons.getbootstrap.com<br />
 http://ganlanyuan.github.io/tiny-slider
 
 ## License
